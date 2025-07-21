@@ -15,7 +15,7 @@ config = get_settings()
 
 class TTSRequest(BaseModel):
     """TTS请求模型"""
-    model: str = "ChatTTS"
+    model: str = "CosyVoice2-0.5B"
     input: str
     voice: Optional[str] = None
     speed: Optional[float] = 1.0
@@ -32,7 +32,7 @@ async def tts_with_retry(request: TTSRequest, max_retries: int = 3):
     payload = {
         "model": request.model,
         "input": request.input,
-        "voice": request.voice or "AAAAANGeZ1UCAAAAAgAAAA8AAAAAAAAAAAAAAAAA0A0AAGFyY2hpdmUvdmVyc2lvblBLAQIAAAAACAgAAAAAAABOREdMKAAAACgAAAAeAAAAAAAAAAAAAAAAAFIOAABhcmNoaXZlLy5kYXRhL3NlcmlhbGl6YXRpb25faWRQSwYGLAAAAAAAAAAeAy0AAAAAAAAAAAAFAAAAAAAAAAUAAAAAAAAAQgEAAAAAAAD4DgAAAAAAAFBLBgcAAAAAOhAAAAAAAAABAAAAUEsFBgAAAAAFAAUAQgEAAPgOAAAAAA==",
+        "voice": request.voice or "中文女",
         "speed": request.speed
     }
     

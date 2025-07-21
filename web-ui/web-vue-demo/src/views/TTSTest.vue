@@ -199,7 +199,7 @@ const audioInfo = ref({
 
 const settings = ref({
   model: 'CosyVoice2-0.5B',
-  voice: '中文女声',
+  voice: '中文女',
   quality: 'medium',
   format: 'wav'
 })
