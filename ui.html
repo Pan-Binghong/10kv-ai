@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>手把手带你学10K VolteCoze-知识库助手</title>
+    <script src="https://lf-cdn.coze.cn/obj/unpkg/flow-platform/chat-app-sdk/1.1.0-beta.0/libs/cn/index.js"></script>
+</head>
+
+<body>
+    <h1>111111111</h1>
+    <script>
+        const cozeWebSDK = new CozeWebSDK.WebChatClient({
+            config: {
+                // 智能体 ID
+                botId: '7519370550456975401',
+            },
+            auth: {
+                // 鉴权方式
+                type: 'token',
+                // 鉴权密钥 - 请在生产环境中使用环境变量
+                token: 'your_token_here',
+                
+                // 备用密钥
+                onRefreshToken: () => 'your_token_here',
+            },
+            userInfo: {
+                id: "123", // 用户ID
+                url: "//", // 用户头像的url
+                nickname: "用户昵称",  // 需要显示的用户昵称
+              },
+            ui:{
+                base:{
+                    icon:"//",  // 应用图标
+                    layout:"mobile",  // 页面显示方式
+                    lang:"zh-CN",  //  默认语言
+                    zIndex:100  // 页面层级
+                }, 
+                header:{
+                    isShow:true,  // 是否显示标题栏
+                    isNeedClose:true, // 是否显示右上角的关闭按钮
+                },
+                asstBtn: {
+                    isNeed: false,  // 是否显示悬浮球，如不显示清自定义调出
+                    // cozeWebSDK.showChatBot();  显示聊天框
+                    // cozeWebSDK.hideChatBot();  隐藏聊天框
+                },
+                footer: {
+                    isShow: true,  // 是否显示页面底部
+                    expressionText: 'Powered by {{name}}&{{name1}}',  // 页面底部文案
+                    linkvars: {
+                      name: {
+                        text: 'A',  // 替换占位的文字
+                        link: 'https://www.test1.com'  // 替换占位文字的链接
+                      },
+                      name1: {
+                        text: 'B',
+                        link: 'https://www.test2.com'
+                      }
+                    }
+                }
+            },
+            chatBot: {  // 聊天框标题
+                title: "Kids' Playmate | Snowy",
+                uploadable: true, // 是否允许上传文件
+                width: 800, // 聊天框宽度
+                el: undefined,
+                onHide: () => {
+                    // todo...
+                    // 聊天框隐藏时触发
+                },
+                onShow: () => {
+                    // todo...
+                    // 聊天框显示时触发
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>

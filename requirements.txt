@@ -1,0 +1,35 @@
+# FastAPI 和 Web 服务器
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+
+# HTTP 客户端和异步支持
+httpx>=0.25.0
+asyncio-throttle>=1.0.2
+
+# 数据验证和配置管理
+pydantic[email]>=2.4.2
+pydantic-settings>=2.0.3
+python-dotenv>=1.0.0
+
+# 日志和监控
+structlog>=23.1.0
+colorama>=0.4.6
+
+# 类型检查和开发工具
+typing-extensions>=4.8.0
+
+# WebSocket 支持 (已包含在 FastAPI 中)
+websockets>=11.0.3
+
+# 可选: 开发和测试工具
+pytest>=7.4.3
+pytest-asyncio>=0.21.1
+black>=23.10.1
+isort>=5.12.0
+flake8>=6.1.0
+
+# 可选: 性能监控
+prometheus-client>=0.19.0
+
+# AI 和 LLM 支持 (如果需要)
+openai>=1.12.0 

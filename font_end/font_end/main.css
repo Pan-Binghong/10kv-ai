@@ -1,0 +1,62 @@
+/* 基础背景渐变 */
+body {
+  background: linear-gradient(135deg, #0f2027 0%, #2c5364 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+}
+
+/* 玻璃拟态卡片 */
+.glassmorphism {
+  background: rgba(30, 40, 60, 0.7);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border-radius: 1.5rem;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.25);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+/* 卡片标题科技感 */
+.card-title {
+  letter-spacing: 2px;
+  color: #00c3ff;
+  text-shadow: 0 2px 8px rgba(0,195,255,0.15);
+}
+
+/* 按钮科技风动画 */
+.btn-primary {
+  background: linear-gradient(90deg, #00c3ff 0%, #005bea 100%);
+  border: none;
+  box-shadow: 0 4px 16px 0 rgba(0,195,255,0.15);
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.btn-primary:hover, .btn-primary:focus {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 8px 32px 0 rgba(0,195,255,0.25);
+}
+
+/* 顶部导航栏样式 */
+.navbar {
+  border-bottom: 1px solid rgba(0,195,255,0.08);
+  background: rgba(10, 20, 40, 0.95) !important;
+  box-shadow: 0 2px 12px 0 rgba(0,195,255,0.05);
+}
+
+/* 底部栏样式 */
+footer {
+  border-top: 1px solid rgba(0,195,255,0.08);
+  background: rgba(10, 20, 40, 0.95) !important;
+}
+
+/* 响应式优化 */
+@media (max-width: 576px) {
+  .glassmorphism {
+    padding: 1.2rem 0.5rem;
+  }
+  .card-title {
+    font-size: 2rem;
+  }
+  .btn-lg {
+    font-size: 1.1rem;
+    padding: 0.7rem 2rem;
+  }
+} 

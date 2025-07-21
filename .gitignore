@@ -1,0 +1,194 @@
+# ==============================================
+# 10KV AI 项目 .gitignore 配置
+# ==============================================
+
+# Python相关
+# ==============================================
+__pycache__/
+*.py[oc]
+*.pyo
+*.pyd
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+# ==============================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+pip-wheel-metadata/
+
+# 环境配置文件（保留模板）
+# ==============================================
+*.env
+!config.env.template
+
+# 数据文件和敏感内容
+# ==============================================
+# 大型数据文件
+*.docx
+*.xlsx
+*.csv
+data/*.docx
+data/*.xlsx 
+data/*.csv
+data/*.pdf
+
+# 训练数据和模型文件
+*.model
+*.bin
+*.ckpt
+models/
+checkpoints/
+
+# 日志文件
+# ==============================================
+*.log
+logs/
+*.log.*
+
+# 前端相关
+# ==============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+
+# Vue.js 特定
+.DS_Store
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# 临时和缓存文件
+# ==============================================
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache
+.pytest_cache/
+.coverage
+htmlcov/
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 操作系统相关
+# ==============================================
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msm
+*.msp
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Linux
+*~
+.nfs*
+
+# IDE和编辑器
+# ==============================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# 安全相关
+# ==============================================
+# API密钥和敏感配置
+*secret*
+*password*
+*credential*
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+config/production.py
+
+# 音频和媒体文件（根据需要调整）
+# ==============================================
+*.wav
+*.mp3
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+
+# 数据库文件
+# ==============================================
+*.db
+*.sqlite
+*.sqlite3
+
+# 其他
+# ==============================================
+.pytest_cache/
+.coverage
+*.pid
+*.seed
+*.pid.lock
+*.tgz
+*.tar.gz
+
+# 特定文件（如果需要）
+# ==============================================
+# 保留重要的数据文件但忽略大型文件
+!data/training_data.json
