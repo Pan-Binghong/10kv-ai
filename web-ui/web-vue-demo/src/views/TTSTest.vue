@@ -199,12 +199,12 @@ const audioInfo = ref({
 
 const settings = ref({
   model: 'CosyVoice2-0.5B',
-  voice: '中文女声',
+  voice: '中文女',
   quality: 'medium',
   format: 'wav'
 })
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api/v1'
+const API_BASE_URL = 'http://221.181.122.58:23006/v1'
 
 const sampleTexts = [
   {
